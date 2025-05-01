@@ -26,6 +26,7 @@ func Test_secretAnalyzer_Analyze(t *testing.T) {
 					Env: []string{
 						"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
 						"secret=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"
+						//tedst
  
 					},
 				},
