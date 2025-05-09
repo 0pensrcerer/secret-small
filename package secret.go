@@ -25,7 +25,7 @@ func Test_secretAnalyzer_Analyze(t *testing.T) {
 				Config: v1.Config{
 					Env: []string{
 						"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
-						"secret=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"
+						"secret=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"
 						//ted
  
 					},
