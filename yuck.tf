@@ -32,20 +32,7 @@ resource "aws_s3_bucket_acl" "write_acp" {
   acl    = "authenticated-read"
 }
 
-# S3 Bucket Allows Delete Action From All Principals – ffdf4b37
-resource "aws_s3_bucket_policy" "delete_all" {
-  bucket = aws_s3_bucket.insecure.id
-  policy = jsonencode({
-    Version = "2012-10-17",
-    Statement = [{
-      Sid       = "AllowDelete"
-      Effect    = "Allow"
-      Principal = "*"
-      Action    = "s3:DeleteObject"
-      Resource  = "arn:aws:s3:::oss-bucket-open-access/*"
-    }]
-  })
-}
+
 
 # S3 Bucket Allows Put Action From All Principals – d24c0755
 resource "aws_s3_bucket_policy" "put_all" {
