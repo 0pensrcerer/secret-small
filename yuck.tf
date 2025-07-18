@@ -61,7 +61,7 @@ resource "aws_db_instance" "insecure_rds" {
   password           = "Plaintext123"
   instance_class     = "db.t2.micro"
   allocated_storage  = 20
-  publicly_accessible = true
+  publicly_accessible = false
   skip_final_snapshot = true
 }
 
